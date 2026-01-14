@@ -1,0 +1,5 @@
+# 1. 强行把隐藏的 .github 文件夹加入暂存区
+git add .github
+
+# 2. 提交这个指挥部文件
+git commit -m "feat: 真正开启全自动流水线大脑"
