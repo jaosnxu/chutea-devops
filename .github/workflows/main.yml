@@ -11,20 +11,16 @@ jobs:
       - name: 1. 拉取最新源码
         uses: actions/checkout@v3
 
-      - name: 2. 自动化分析
-        run: echo "✅ 代码静态检查通过"
-
-      - name: 3. 跨越时空：一键部署到腾讯云
+      - name: 2. 强力握手：连接腾讯云
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_IP }}
           username: root
           password: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          command_timeout: 30s
           script: |
-            echo "✅ 成功登录腾讯云服务器！"
-            # 进入你的项目目录（如果目录不存在则创建）
+            echo "--- 恭喜 Jason，全自动流水线通车了！ ---"
             mkdir -p /root/chutea-devops
             cd /root/chutea-devops
-            echo "🚀 正在更新代码..."
-            # 这里是以后执行重启服务的命令位置
-            echo "✅ 部署圆满成功，Jason！502 隐患已消除。"
+            echo "当前路径: $(pwd)"
