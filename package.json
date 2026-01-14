@@ -1,23 +1,12 @@
 {
   "name": "chutea-core",
   "private": true,
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.19.2"
   }
-}
-{
-  "name": "chutea-devops",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
 }
