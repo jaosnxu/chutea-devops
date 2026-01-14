@@ -1,4 +1,14 @@
 {
+  "name": "chutea-core",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+{
   "name": "chutea-devops",
   "version": "1.0.0",
   "description": "",
